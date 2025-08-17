@@ -54,7 +54,6 @@ def get_image_path(row):
 
     for ext in image_extensions:
         path = f"images/{model_name_for_path}{ext}" 
-        if os.path.exists(path): 
             return path
 
     return None
@@ -336,6 +335,7 @@ if st.session_state.search_triggered and st.session_state.filter_applied:
 
 
         
+
 
 
 
