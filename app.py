@@ -233,11 +233,17 @@ if st.session_state.search_triggered and not st.session_state.filter_applied:
     df_rekomendasi = df_rekomendasi[df_rekomendasi['Harga'] <= harga_input]
 
     if tahun_input != 'Semua':
-        tahun_input_int = int(tahun_input)
+        tahun_input = int(tahun_input)
 
-        # Filter motor dengan tahun produksi yang sama persis
-        df_rekomendasi = df_rekomendasi[df_rekomendasi['Tahun Produksi'] == tahun_input_int]
+    df_tahun_spesifik = df_rekomendasi[df_rekomendasi['Tahun Produksi'] == tahun_input]
 
+    if df_tahun_spesifik.empty:
+        
+        tahun_berikutnya = tahun_input + 1
+        df_tahun_spesifik = df_rekomendasi[df_rekomendasi['Tahun Produksi'] == tahun_berikutnya]       
+
+    df_rekomendasi = df_tahun_spesifik
+    
     if jenis_input != 'Semua' and 'Jenis' in df_rekomendasi.columns:
         df_rekomendasi = df_rekomendasi[df_rekomendasi['Jenis'] == jenis_input]
 
@@ -336,6 +342,7 @@ if st.session_state.search_triggered and st.session_state.filter_applied:
 
 
         
+
 
 
 
