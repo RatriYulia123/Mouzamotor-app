@@ -162,7 +162,7 @@ if st.sidebar.button("Cari Motor"):
 
 # --- PROSES REKOMENDASI BERDASARKAN KLASTER ---
 if not st.session_state.search_triggered:
-    st.image("images/Gambar_home.jpeg", width=670)
+    st.image("https://raw.githubusercontent.com/RatriYulia123/Mouzamotor-app/main/images/Gambar_home.jpeg", width=670)
     st.markdown("""
         📍 **Alamat dealer:**  
         Ruko Fitra Jaya, Jl. Kali Abang Tengah No.1-2  Perwira, Kec. Bekasi Utara
@@ -336,6 +336,7 @@ if st.session_state.search_triggered and st.session_state.filter_applied:
 
 
         
+
 
 
 
