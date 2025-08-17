@@ -58,7 +58,7 @@ def get_image_path(row):
 
     return None
 
-df['path_gambar'] = df.apply(get_image_path, axis=1) 
+df['path_gambar'] = df['Model'].apply(lambda x: f"https://raw.githubusercontent.com/RatriYulia123/Mouzamotor-app/main/images/{x}.jpeg")
 
 
 # --- DEFINISI INFORMASI KLASTER ---
@@ -287,7 +287,8 @@ if st.session_state.search_triggered and st.session_state.filter_applied:
                     """, unsafe_allow_html=True)
 
                 with col2:
-                    if 'path_gambar' in row and pd.notna(row['path_gambar']) and os.path.exists(row['path_gambar']):
+                 
+                    if 'path_gambar' in row and pd.notna(row['path_gambar']):
                         st.image(str(row['path_gambar']), caption=row['Model'], use_container_width=True)
                     else:
                         st.info(f"Gambar untuk {row['Model']} tidak tersedia.")
@@ -335,6 +336,7 @@ if st.session_state.search_triggered and st.session_state.filter_applied:
 
 
         
+
 
 
 
