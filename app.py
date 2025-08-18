@@ -4,7 +4,7 @@ import os
 
 # --- KONFIGURASI HALAMAN STREAMLIT ---
 st.set_page_config(layout="centered") 
-st.title("Referensi Pembelian Motor Bekas di Mouza Motor 🏍️")
+st.title("Referensi Motor Bekas Mouza Motor 🏍️")
 
 st.markdown("""
     <style>
@@ -342,6 +342,7 @@ if st.session_state.search_triggered and st.session_state.filter_applied:
 
 
         
+
 
 
 
