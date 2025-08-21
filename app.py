@@ -44,7 +44,7 @@ div[data-testid="stExpander"] {
 
 
 # --- PEMUATAN DATASET DAN PRA-PEMROSESAN DATAFRAME ---
-df = pd.read_csv("klaster_baru_data_motor_mouza.csv")
+df = pd.read_csv("klaster_new_data_motor_mouza.csv")
 
 
 # --- MEMASUKAN GAMBAR KE DALAM DATAFRAME ---
@@ -67,20 +67,20 @@ klaster_harga_rentang = {
     0: {'min': 8000000.0,  'max': 30000000.0},
     1: {'min': 13500000.0, 'max': 36000000.0},
     2: {'min': 23000000.0, 'max': 24000000.0},
-    3: {'min': 14500000.0, 'max': 62000000.0}
+    3: {'min': 14500000.0, 'max': 21000000.0}
 }
 
 
 klaster_deskripsi_detail = {
-    0: """Unit ini termasuk dalam kategori motor ekonomis, dengan harga jual yang terjangkau.
+    0: """Unit ini termasuk dalam kategori motor ekonomis, motor matic ini merupakan motor keluaran honda dengan harga jual yang terjangkau.
       Motor ini cocok bagi pengguna yang menyukai motor matik keluaran merek Honda dan membutuhkan kendaraan untuk aktivitas harian ringan, seperti pergi ke sekolah, bekerja, atau menjalankan kebutuhan sehari-hari lainnya
  """,
-    1: """Unit ini termasuk dalam kategori motor kelas menengah, dengan harga yang relatif terjangkau. 
+    1: """Unit ini termasuk dalam kategori motor kelas menengah, motor matic ini merupakan motor keluaran yamaha dengan harga yang relatif terjangkau. 
     Motor ini cocok bagi pengguna yang menyukai motor matik keluaran merek Yamaha, karena menawarkan performa yang baik serta desain yang modern
   """,
-    2: """Unit ini termasuk dalam kategori motor sport entry level, dengan harga jual yang cukup terjangkau di kelasnya. Motor ini cocok bagi pengguna yang menginginkan tampilan motor sporty, dengan performa baik namun tetap ekonomis harganya
+    2: """Unit ini termasuk dalam kategori motor premium. Motor sport ini merupakan motor keluaran yamaha, cocok bagi pengguna yang menyukai motor dengan performa unggul dan fitur-fitur yang canggih serta dijual dengan harga yang cukup terjangkau
   """,
-  3:""" Unit ini termasuk dalam kategori motor premium, dengan kapasitas mesin besar, motor ini cocok bagi pengguna yang menyukai motor sport keluaran merek Honda dengan performa unggul dan tampilan modern"""
+  3:""" Unit ini termasuk dalam kategori motor entry level. Motor sport ini merupakan motor keluaran honda, dijual dengan harga yang sangat terjangkau untuk kelas motor sport dengan bahan bakar yang irit. Motor ini cocok bagi pengguna yang menyukai motor sport dengan harga yang ekonomis"""
 
 }
 
@@ -176,7 +176,7 @@ if not st.session_state.search_triggered:
 
 # --- Budget tetap ---
 budget_min = 8000000
-budget_max = 62000000
+budget_max = 21000000
 
 # --- Validasi setelah tombol "Cari Motor" ditekan ---
 if st.session_state.search_triggered and not st.session_state.filter_applied:
@@ -351,6 +351,7 @@ if st.session_state.search_triggered and st.session_state.filter_applied:
 
 
         
+
 
 
 
