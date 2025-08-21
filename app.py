@@ -233,7 +233,7 @@ if st.session_state.search_triggered and not st.session_state.filter_applied:
     df_rekomendasi = df_rekomendasi[df_rekomendasi['Harga'] <= harga_input]
 
     if tahun_input != 'Semua':
-    tahun_input = int(tahun_input)
+        tahun_input = int(tahun_input)
 
         df_tahun_spesifik = df_rekomendasi[df_rekomendasi['Tahun Produksi'] == tahun_input]
 
@@ -342,6 +342,7 @@ if st.session_state.search_triggered and st.session_state.filter_applied:
 
 
         
+
 
 
 
