@@ -66,7 +66,7 @@ klaster_harga_rentang = {
     0: {'min': 8000000.0,  'max': 30000000.0},
     1: {'min': 13500000.0, 'max': 36000000.0},
     2: {'min': 23000000.0, 'max': 24000000.0},
-    3: {'min': 14500000.0, 'max': 62000000.0}
+    3: {'min': 14500000.0, 'max': 60000000.0}
 }
 
 
@@ -175,7 +175,7 @@ if not st.session_state.search_triggered:
 
 # --- Budget tetap ---
 budget_min = 8000000
-budget_max = 62000000
+budget_max = 60000000
 
 # --- Validasi setelah tombol "Cari Motor" ditekan ---
 if st.session_state.search_triggered and not st.session_state.filter_applied:
@@ -233,16 +233,16 @@ if st.session_state.search_triggered and not st.session_state.filter_applied:
     df_rekomendasi = df_rekomendasi[df_rekomendasi['Harga'] <= harga_input]
 
     if tahun_input != 'Semua':
-        tahun_input = int(tahun_input)
+    tahun_input = int(tahun_input)
 
     df_tahun_spesifik = df_rekomendasi[df_rekomendasi['Tahun Produksi'] == tahun_input]
 
     if df_tahun_spesifik.empty:
-        
         tahun_berikutnya = tahun_input + 1
-        df_tahun_spesifik = df_rekomendasi[df_rekomendasi['Tahun Produksi'] == tahun_berikutnya]       
+        df_tahun_spesifik = df_rekomendasi[df_rekomendasi['Tahun Produksi'] == tahun_berikutnya]
 
     df_rekomendasi = df_tahun_spesifik
+
     
     if jenis_input != 'Semua' and 'Jenis' in df_rekomendasi.columns:
         df_rekomendasi = df_rekomendasi[df_rekomendasi['Jenis'] == jenis_input]
@@ -342,6 +342,7 @@ if st.session_state.search_triggered and st.session_state.filter_applied:
 
 
         
+
 
 
 
