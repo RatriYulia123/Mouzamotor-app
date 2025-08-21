@@ -219,10 +219,10 @@ if st.session_state.search_triggered and not st.session_state.filter_applied:
         st.session_state.filter_applied = True
 
         
-klaster_cocok_ids = []
+    klaster_cocok_ids = []
 
     # Mendefinisikan rentang harga klaster
-for klaster_id, rentang in klaster_harga_rentang.items():
+    for klaster_id, rentang in klaster_harga_rentang.items():
         min_harga = rentang['min'] 
         max_harga = rentang['max'] 
 
@@ -231,14 +231,14 @@ for klaster_id, rentang in klaster_harga_rentang.items():
 
    
 # --- PROSES FILTERING DATA ---
-df_rekomendasi = df[df['Klaster'].isin(klaster_cocok_ids)] 
-df_rekomendasi = df_rekomendasi[df_rekomendasi['Harga'] <= harga_input]
+    df_rekomendasi = df[df['Klaster'].isin(klaster_cocok_ids)] 
+    df_rekomendasi = df_rekomendasi[df_rekomendasi['Harga'] <= harga_input]
 
 
 # Filter tahun
-if tahun_input != 'Semua':
-    tahun_input_int = int(tahun_input)
-    df_tahun_sesuai = df_rekomendasi[df_rekomendasi['Tahun Produksi'] == tahun_input_int]
+    if tahun_input != 'Semua':
+        tahun_input_int = int(tahun_input)
+        df_tahun_sesuai = df_rekomendasi[df_rekomendasi['Tahun Produksi'] == tahun_input_int]
     
 
     if not df_tahun_sesuai.empty:
@@ -249,25 +249,25 @@ if tahun_input != 'Semua':
             df_rekomendasi = df_tahun_diatas
 
 # Filter jenis
-if jenis_input != 'Semua' and 'Jenis' in df_rekomendasi.columns:
-    df_rekomendasi = df_rekomendasi[df_rekomendasi['Jenis'] == jenis_input]
+    if jenis_input != 'Semua' and 'Jenis' in df_rekomendasi.columns:
+        df_rekomendasi = df_rekomendasi[df_rekomendasi['Jenis'] == jenis_input]
     
 
 # Filter transmisi
-if transmisi_input != 'Semua' and 'Transmisi' in df_rekomendasi.columns:
-    df_rekomendasi = df_rekomendasi[df_rekomendasi['Transmisi'] == transmisi_input]
+    if transmisi_input != 'Semua' and 'Transmisi' in df_rekomendasi.columns:
+        df_rekomendasi = df_rekomendasi[df_rekomendasi['Transmisi'] == transmisi_input]
     
 
 # Filter model
-if model_input != 'Semua' and 'Model' in df_rekomendasi.columns:
-    df_rekomendasi = df_rekomendasi[df_rekomendasi['Model'] == str(model_input)]
+    if model_input != 'Semua' and 'Model' in df_rekomendasi.columns:
+        df_rekomendasi = df_rekomendasi[df_rekomendasi['Model'] == str(model_input)]
 
 
 # Sorting data otomatis dari harga termurah ke mahal
-df_rekomendasi = df_rekomendasi.sort_values(by="Harga", ascending=True)
+    df_rekomendasi = df_rekomendasi.sort_values(by="Harga", ascending=True)
     
 #simpan hasil filtering
-st.session_state.df_hasil = df_rekomendasi
+    st.session_state.df_hasil = df_rekomendasi
 
 
 # --- TAMPILAN OUTPUT PENGGUNA ---
@@ -351,6 +351,7 @@ if st.session_state.search_triggered and st.session_state.filter_applied:
 
 
         
+
 
 
 
