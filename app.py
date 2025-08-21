@@ -44,7 +44,7 @@ div[data-testid="stExpander"] {
 
 
 # --- PEMUATAN DATASET DAN PRA-PEMROSESAN DATAFRAME ---
-df = pd.read_csv("klaster_new_data_motor_mouza .csv")
+df = pd.read_csv("klaster_new_data_motor_mouza.csv")
 
 
 # --- MEMASUKAN GAMBAR KE DALAM DATAFRAME ---
@@ -338,6 +338,7 @@ if st.session_state.search_triggered and st.session_state.filter_applied:
 
 
         
+
 
 
 
