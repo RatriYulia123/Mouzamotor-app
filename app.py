@@ -235,11 +235,14 @@ if st.session_state.search_triggered and not st.session_state.filter_applied:
     df_rekomendasi = df_rekomendasi[df_rekomendasi['Harga'] <= harga_input]
 
 
+# Default supaya gak error
+df_tahun_sesuai = pd.DataFrame()
+df_tahun_diatas = pd.DataFrame()
+
 # Filter tahun
-    if tahun_input != 'Semua':
-        tahun_input_int = int(tahun_input)
-        df_tahun_sesuai = df_rekomendasi[df_rekomendasi['Tahun Produksi'] == tahun_input_int]
-    
+if tahun_input != 'Semua':
+    tahun_input_int = int(tahun_input)
+    df_tahun_sesuai = df_rekomendasi[df_rekomendasi['Tahun Produksi'] == tahun_input_int]
 
     if not df_tahun_sesuai.empty:
         df_rekomendasi = df_tahun_sesuai
@@ -247,6 +250,7 @@ if st.session_state.search_triggered and not st.session_state.filter_applied:
         df_tahun_diatas = df_rekomendasi[df_rekomendasi['Tahun Produksi'] > tahun_input_int]
         if not df_tahun_diatas.empty:
             df_rekomendasi = df_tahun_diatas
+
 
 # Filter jenis
     if jenis_input != 'Semua' and 'Jenis' in df_rekomendasi.columns:
@@ -351,6 +355,7 @@ if st.session_state.search_triggered and st.session_state.filter_applied:
 
 
         
+
 
 
 
