@@ -238,10 +238,10 @@ if st.session_state.search_triggered and not st.session_state.filter_applied:
         df_tahun_spesifik = df_rekomendasi[df_rekomendasi['Tahun Produksi'] == tahun_input]
 
         if df_tahun_spesifik.empty:
-        tahun_berikutnya = tahun_input + 1
-        df_tahun_spesifik = df_rekomendasi[df_rekomendasi['Tahun Produksi'] == tahun_berikutnya]
+            tahun_berikutnya = tahun_input + 1
+            df_tahun_spesifik = df_rekomendasi[df_rekomendasi['Tahun Produksi'] == tahun_berikutnya]
 
-        df_rekomendasi = df_tahun_spesifik
+            df_rekomendasi = df_tahun_spesifik
 
     
     if jenis_input != 'Semua' and 'Jenis' in df_rekomendasi.columns:
@@ -342,6 +342,7 @@ if st.session_state.search_triggered and st.session_state.filter_applied:
 
 
         
+
 
 
 
