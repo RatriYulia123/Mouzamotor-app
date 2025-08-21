@@ -1,6 +1,6 @@
 Merk,Model,Harga,Tahun Produksi,Jarak Tempuh,Jenis,Transmisi,Kondisi Motor,Mesin,Klaster
 Honda,Beat new CBS,15500000,2024,13600,Skuter,Automatic,"Pemakaian pribadi, kilometer masih rendah, mesin bagus minus sedikit lecet body pemakaian",110,0
-Honda,Beat Deluxe CBS,14000000,2023,38000,Skuter,Automatic,"Kondisi mesin bagus, sperapart bagus, kilometer rendah, minus sedikit lecet body pemakaian",110,0
+Honda,Beat Deluxe Grey,18000000,2023,38000,Skuter,Automatic,"Kondisi mesin bagus, sperapart bagus, kilometer rendah, minus sedikit lecet body pemakaian",110,0
 Honda,All New PCX,24000000,2021,18000,Skuter,Automatic,"Kondisi mesin masih bagus, minus sedikit lecet body pemakaian dan ban kurang tebal",160,0
 Yamaha,Scoopy sporty red,16000000,2022,8000,Skuter,Automatic,"Kondisi mesin masih bagus, minus BBM boros dan sedikit lecet body pemakaian",110,1
 Yamaha,N-Max,17000000,2018,55000,Skuter,Automatic,"Kondisi mesin bagus, kilometer rendah, minus body besar jadi kurang gesit dan BBM boros",155,1
@@ -13,7 +13,7 @@ Yamaha,Fazio,15000000,2022,5000,Skuter,Automatic,"Kondisi mesin bagus, kelistrik
 Yamaha,R-15 V3,23000000,2018,3000,Sport,Kopling,"Kondisi mesin bagus,tires condition 80%, BBM boros, body mulus, ODO 10.XXX Stop going",155,2
 Honda,All new CBR 250R,60000000,2020,7500,Sport,Kopling,"Kondisi mesin bagus, full orisinil parts, tires condition 100%, kelistrikan baik, quick shift atas bawah, ODO 2.XXX Stop",250,3
 Honda,Scoopy stylish,14500000,2021,26000,Skuter,Automatic,"kondisi mesin bagus, kelistrikan baik, full orisinil, BBM irit minus body sedikit lecet pemakaian pribadi",110,0
-Honda,Beat Deluxe,14500000,2024,26000,Skuter,Automatic,"kondisi mesin bagus, tires 90% condition, BBM irit, oli baru,kilometer rendah minus sedikit lecet pemakaian pribadi",110,0
+Honda,Beat Deluxe Navy,14500000,2024,26000,Skuter,Automatic,"kondisi mesin bagus, tires 90% condition, BBM irit, oli baru,kilometer rendah minus sedikit lecet pemakaian pribadi",110,0
 Honda,Adv Abs,24000000,2021,26000,Skuter,Automatic,"kondisi mesin bagus, oli baru, tires condition 94%, kelistrikan baik minus sedikit lecet pemakaian pribadi",150,0
 Honda,Vario 125 Red,16000000,2020,9000,Skuter,Automatic,"kondisi mesin bagus, oli baru, full orisinil, ban 99%,idling normal, kelistrikan baik minus sedikit lecet pemakaian pribadi",125,0
 Honda,All new beat CBS,13000000,2021,8000,Skuter,Automatic,"kondisi mesin bagus, tires condition 90%, BBM irit,oli baru minus sedikit lecet body pemakaian pribadi",110,0
@@ -21,7 +21,7 @@ Honda,Vario 110 ESP,8000000,2016,12000,Skuter,Automatic,"kondisi mesin bagus, ti
 Yamaha,Aerox 155 VA,19000000,2019,7000,Skuter,Automatic,"kondisi mesin bagus, oli baru, tires condition 90%, full orisinil",155,1
 Honda,All New Vario 125,16500000,2021,1000,Skuter,Automatic,"kondisi mesin bagus, tires 98% condition ( pirelli ) oli baru, BBM irit, minus lecet body pemakaian pribadi",125,0
 Honda,Scoopy sporty ESP,14500000,2019,6000,Skuter,Automatic,"kondisi mesin bagus, oli baru, tires condition 90%, full orisinil, kelistrikan bagus minus sedikit lecet body pemakaian pribadi",110,0
-Honda,Beat CBS,14000000,2023,33000,Skuter,Automatic,"Ban depan belakang bagus pajak hidup, kondisi mesin bagus",110,0
+Honda,Beat CBS,15000000,2023,33000,Skuter,Automatic,"Ban depan belakang bagus pajak hidup, kondisi mesin bagus",110,0
 Honda,Genio,14500000,2023,26000,Skuter,Automatic,"Ban depan belekang bagus, kondisi mesin bagus, tires 90& condition",110,0
 Yamaha,N-Max Grey Dov,21000000,2019,16000,Skuter,Automatic,"Ban depan belakang bagus pajak hidup, kondisi mesin bagus, motor perawatan jarang digunakan",155,1
 Yamaha,N-Max,23500000,2022,35000,Skuter,Automatic,"Ban depan botak, lecet pemakaian, kondisi mesin bagus, full orisinil",155,1
@@ -39,7 +39,7 @@ Honda,Scoopy stylish grey,16500000,2022,26000,Skuter,Automatic,"Ban depan belaka
 Honda,PCX ABS White,25000000,2021,39000,Skuter,Automatic,"Ban depan, belakang bagus, kondisi mesin bagus, full orisinil,tires 90% condition",160,0
 Honda,Beat street black,16000000,2022,31000,Skuter,Automatic,"Kondisi mesin bagus, motor layak pakai, full orisinil,BBM irit",110,0
 Yamaha,Snax,36000000,2019,29000,Skuter,Automatic,"Kondisi mesin bagus, motor layak pakai, full orisinil",250,1
-Honda,Beat Deluxe,18000000,2021,43000,Skuter,Automatic,"Kondisi mesin bagus, motor layak pakai, full orisinil,BBM irit minus ban kurang bagus",110,0
+Honda,Beat Deluxe,17000000,2021,43000,Skuter,Automatic,"Kondisi mesin bagus, motor layak pakai, full orisinil,BBM irit minus ban kurang bagus",110,0
 Yamaha,Mio Ger,15000000,2022,27000,Skuter,Automatic,"Ban depan belakang bagus, kondisi mesin bagus, full orisinil, BBM irit",125,1
 Yamaha,Aerox Black,23500000,2022,28000,Skuter,Automatic,"Kondisi mesin bagus, motor layak pakai, full orisinil",125,1
 Yamaha,N-Max Black Dov,25000000,2022,28000,Skuter,Automatic,"Kondisi mesin bagus, motor layak pakai, full orisinil",155,1
@@ -63,6 +63,7 @@ Yamaha,N-Max Hitam,22000000,2020,35000,Skuter,Automatic,"Kondisi mesin bagus, ke
 Yamaha,N-Max Cokelat,24500000,2022,25000,Skuter,Automatic,"kondisi mesin bagus, ketebalan ban 99%, full orisinil, minus body sedikit lecet pemakaian pribadi",155,0
 Honda,CBR 150 Red,15000000,2019,60000,Sport,Kopling,"Kondisi mesin bagus, motor layak pakai, full orisinil,BBM irit",150,3
 Honda,CB 150X,21000000,2022,26000,Sport,Kopling,"Ban depan, belakang bagus, kondisi mesin bagus, full orisinil,tires 90% condition",150,3
+
 
 
 
