@@ -285,7 +285,7 @@ if st.session_state.search_triggered and st.session_state.filter_applied:
                     st.markdown(f"""
                     <h4 style="margin-bottom:10px;">{row['Model']}</h4>
                     <p><strong>Harga:</strong> {format_harga}</p>
-                    <p><strong>Merek:</strong> {int(row['Merk'])}</p>
+                    <p><strong>Merk:</strong> {int(row['Merk'])}</p>
                     <p><strong>Tahun produksi:</strong> {int(row['Tahun Produksi'])}</p>
                     <p><strong>Jarak Tempuh:</strong> {format_odometer}</p>
                     """, unsafe_allow_html=True)
@@ -340,6 +340,7 @@ if st.session_state.search_triggered and st.session_state.filter_applied:
 
 
         
+
 
 
 
