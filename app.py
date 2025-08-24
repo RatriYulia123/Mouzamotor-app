@@ -176,7 +176,7 @@ if not st.session_state.search_triggered:
 
 # --- Budget tetap ---
 budget_min = 8000000
-budget_max = 21000000
+budget_max = 36000000
 
 # --- Validasi setelah tombol "Cari Motor" ditekan ---
 if st.session_state.search_triggered and not st.session_state.filter_applied:
@@ -199,8 +199,8 @@ if st.session_state.search_triggered and not st.session_state.filter_applied:
 
     # Budget terlalu tinggi
     elif st.session_state.harga_input > budget_max:
-        st.warning("Tidak ditemukan motor dengan harga di atas Rp62.000.000.")
-        st.info("Silakan masukkan budget maksimal Rp62.000.000 atau kurang untuk mendapatkan referensi motor bekas.")
+        st.warning("Tidak ditemukan motor dengan harga di atas Rp36.000.000.")
+        st.info("Silakan masukkan budget maksimal Rp36.000.000 atau kurang untuk mendapatkan referensi motor bekas.")
 
         col1, col2 = st.columns([5, 1])  # Kolom 1 lebih besar, kolom 2 kecil di kanan
         with col2:
@@ -340,6 +340,7 @@ if st.session_state.search_triggered and st.session_state.filter_applied:
 
 
         
+
 
 
 
