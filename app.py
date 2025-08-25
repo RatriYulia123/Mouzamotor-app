@@ -72,15 +72,13 @@ klaster_harga_rentang = {
 
 
 klaster_deskripsi_detail = {
-    0: """Unit ini termasuk dalam kategori motor ekonomis, motor matic ini merupakan motor keluaran honda dengan harga jual yang terjangkau.
-      Motor ini cocok bagi pengguna yang menyukai motor matik keluaran merek Honda dan membutuhkan kendaraan untuk aktivitas harian ringan, seperti pergi ke sekolah, bekerja, atau menjalankan kebutuhan sehari-hari lainnya
+    0: """Unit ini termasuk dalam kategori motor matic ekonomis dari Honda. Jarak tempuhnya sudah tinggi, kapasitas mesin dalam unit ini mayoritas 110 cc, tetapi terdapat beberapa unit dengan kapasitas mesin besar 160 cc dan harga jualnya terjangkau. Motor ini cocok untuk pengguna yang menyukai motor matic Honda dan membutuhkan kendaraan untuk aktivitas harian, terutama untuk perjalanan jarak dekat.
  """,
-    1: """Unit ini termasuk dalam kategori motor kelas menengah, motor matic ini merupakan motor keluaran yamaha dengan harga yang relatif terjangkau. 
-    Motor ini cocok bagi pengguna yang menyukai motor matik keluaran merek Yamaha, karena menawarkan performa yang baik serta desain yang modern
+    1: """Unit ini termasuk dalam kategori motor matic kelas menengah dari Yamaha dengan jarak tempuh relatif rendah, rata-rata kapasitas mesin didalam unit ini besar sekitar 125-155 cc dan harga jualnya yang relatif terjangkau. Motor ini cocok untuk pengguna yang menyukai motor matic Yamaha dan membutuhkan kendaraan yang nyaman untuk aktivitas harian di perkotaan, terutama bagi mereka yang sering menempuh perjalanan jauh seperti pulang-pergi kerja.
   """,
-    2: """Unit ini termasuk dalam kategori motor premium. Motor sport ini merupakan motor keluaran yamaha, cocok bagi pengguna yang menyukai motor dengan performa unggul dan fitur-fitur yang canggih serta dijual dengan harga yang cukup terjangkau
+    2: """Unit ini termasuk dalam kategori motor sport premium dari Yamaha. Dengan jarak tempuh yang masih sangat rendah dan kapasitas mesin 155 cc, motor ini menawarkan performa yang tangguh untuk kelasnya. Cocok bagi pengguna yang mengutamakan performa, menyukai desain sporty, dan menginginkan fitur-fitur canggih dengan harga yang masih relatif terjangkau.
   """,
-  3:""" Unit ini termasuk dalam kategori motor entry level. Motor sport ini merupakan motor keluaran honda, dijual dengan harga yang sangat terjangkau untuk kelas motor sport dengan bahan bakar yang irit. Motor ini cocok bagi pengguna yang menyukai motor sport dengan harga yang ekonomis"""
+  3:""" Unit ini termasuk dalam kategori motor sport entry level dari Honda. Dengan kapasitas mesin 150 cc dan jarak tempuh yang sudah tinggi, motor ini menawarkan bahan bakar yang irit dan harga yang sangat terjangkau untuk kelasnya. Cocok bagi pengguna yang menyukai motor sport Honda dan mencari harga yang ekonomis"""
 
 }
 
@@ -340,6 +338,7 @@ if st.session_state.search_triggered and st.session_state.filter_applied:
 
 
         
+
 
 
 
