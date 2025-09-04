@@ -226,8 +226,8 @@ if st.session_state.search_triggered and not st.session_state.filter_applied:
     df_rekomendasi = df_rekomendasi[df_rekomendasi['Harga'] <= st.session_state.harga_input]
 
     # Filter tahun
-if st.session_state.tahun_input != 'Semua':
-    tahun_input_int = int(st.session_state.tahun_input)
+    if st.session_state.tahun_input != 'Semua':
+        tahun_input_int = int(st.session_state.tahun_input)
     
     # Cari tahun sesuai
     df_tahun_sesuai = df_rekomendasi[df_rekomendasi['Tahun Produksi'] == tahun_input_int]
@@ -237,6 +237,7 @@ if st.session_state.tahun_input != 'Semua':
     else:
         # Cari tahun terdekat di atas input
         df_tahun_diatas = df_rekomendasi[df_rekomendasi['Tahun Produksi'] > tahun_input_int]
+        
         if not df_tahun_diatas.empty:
             tahun_terdekat = df_tahun_diatas['Tahun Produksi'].min()
             df_rekomendasi = df_tahun_diatas[df_tahun_diatas['Tahun Produksi'] == tahun_terdekat]
@@ -344,6 +345,7 @@ if st.session_state.search_triggered and st.session_state.filter_applied:
 
 
         
+
 
 
 
