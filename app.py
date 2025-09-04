@@ -228,7 +228,7 @@ if st.session_state.search_triggered and not st.session_state.filter_applied:
     # Filter tahun
     if st.session_state.tahun_input != 'Semua':
         tahun_input_int = int(st.session_state.tahun_input)
-        df_tahun_sesuai = df_rekomendasi[df_rekomendasi['Tahun Produksi'] == tahun_input_int]
+        df_rekomendasi = df_rekomendasi[df_rekomendasi['Tahun Produksi'] == tahun_input_int]
      
 
     # Filter jenis
@@ -333,6 +333,7 @@ if st.session_state.search_triggered and st.session_state.filter_applied:
 
 
         
+
 
 
 
