@@ -238,8 +238,9 @@ if st.session_state.search_triggered and not st.session_state.filter_applied:
 
         if not df_tahun_diatas.empty:
             df_rekomendasi = df_tahun_diatas
-        else:
-            df_rekomendasi = pd.DataFrame()  # kosong total
+        else
+            df_rekomendasi = pd.DataFrame(columns=df_rekomendasi.columns)
+
 
     if not df_rekomendasi.empty:
     # Filter jenis
@@ -344,6 +345,7 @@ if st.session_state.search_triggered and st.session_state.filter_applied:
 
 
         
+
 
 
 
