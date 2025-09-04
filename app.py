@@ -215,7 +215,6 @@ if st.session_state.search_triggered and not st.session_state.filter_applied:
     else:
         st.session_state.show_result = True
         st.session_state.filter_applied = True
-
         
     klaster_cocok_ids = []
     for klaster_id, rentang in klaster_harga_rentang.items():
@@ -225,11 +224,10 @@ if st.session_state.search_triggered and not st.session_state.filter_applied:
     df_rekomendasi = df[df['Klaster'].isin(klaster_cocok_ids)] 
     df_rekomendasi = df_rekomendasi[df_rekomendasi['Harga'] <= st.session_state.harga_input]
 
-   # Filter tahun dengan fallback (persis -> semua tahun di atas)
-    if st.session_state.tahun_input != 'Semua':
-        tahun_input_int = int(st.session_state.tahun_input)
+   # Filter tahun
+if st.session_state.tahun_input != 'Semua':
+    tahun_input_int = int(st.session_state.tahun_input)
 
-    # motor dengan tahun persis
     df_tahun_sesuai = df_rekomendasi[df_rekomendasi['Tahun Produksi'] == tahun_input_int]
 
     if not df_tahun_sesuai.empty:
@@ -241,9 +239,9 @@ if st.session_state.search_triggered and not st.session_state.filter_applied:
         if not df_tahun_diatas.empty:
             df_rekomendasi = df_tahun_diatas
         else:
-            # kalau sama sekali nggak ada, kosongkan hasil -> biar nanti muncul warning
-            df_rekomendasi = pd.DataFrame()
+            df_rekomendasi = pd.DataFrame()  # kosong total
 
+if not df_rekomendasi.empty:
     # Filter jenis
     if st.session_state.jenis_input != 'Semua':
         df_rekomendasi = df_rekomendasi[df_rekomendasi['Jenis'] == st.session_state.jenis_input]
@@ -346,6 +344,7 @@ if st.session_state.search_triggered and st.session_state.filter_applied:
 
 
         
+
 
 
 
