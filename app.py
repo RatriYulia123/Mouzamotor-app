@@ -237,8 +237,9 @@ if st.session_state.search_triggered and not st.session_state.filter_applied:
         df_tahun_diatas = df_rekomendasi[df_rekomendasi['Tahun Produksi'] > tahun_input_int]
 
         if not df_tahun_diatas.empty:
-            df_rekomendasi = df_tahun_diatas
-        else
+            df_rekomendasi = df_tahun_diatas 
+        
+        else :
             df_rekomendasi = pd.DataFrame(columns=df_rekomendasi.columns)
 
 
@@ -345,6 +346,7 @@ if st.session_state.search_triggered and st.session_state.filter_applied:
 
 
         
+
 
 
 
