@@ -244,7 +244,7 @@ if st.session_state.search_triggered and not st.session_state.filter_applied:
     if not df_rekomendasi.empty:
     # Filter jenis
         if st.session_state.jenis_input != 'Semua':
-        df_rekomendasi = df_rekomendasi[df_rekomendasi['Jenis'] == st.session_state.jenis_input]
+            df_rekomendasi = df_rekomendasi[df_rekomendasi['Jenis'] == st.session_state.jenis_input]
 
     # Filter transmisi
     if st.session_state.transmisi_input != 'Semua':
@@ -344,6 +344,7 @@ if st.session_state.search_triggered and st.session_state.filter_applied:
 
 
         
+
 
 
 
